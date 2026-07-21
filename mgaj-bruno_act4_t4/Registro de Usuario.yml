@@ -1,0 +1,15 @@
+info:
+  name: Registro de Usuario
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:2925/api/auth/register
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
