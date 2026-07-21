@@ -1,0 +1,26 @@
+info:
+  name: Actualizar Jugador VPS
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://68.183.115.226:2925/MGAJact4-t4/api/jugadores/23
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Melody Jimenez",
+        "posicion": "Portera",
+        "numeroCamiseta": 4,
+        "equipoId": 1
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNZWxvZHkxOUBnbWFpbC5jb20iLCJpYXQiOjE3ODQ2MTA2OTUsImV4cCI6MTc4NDY5NzA5NX0.H1UwFxnZpoUY7SI4b7Qs9KdXXi6K3F2UvCMdXrLQVfI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

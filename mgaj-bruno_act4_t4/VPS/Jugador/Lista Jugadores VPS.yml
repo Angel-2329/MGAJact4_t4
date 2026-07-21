@@ -1,0 +1,24 @@
+info:
+  name: Lista Jugadores VPS
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://68.183.115.226:2925/MGAJact4-t4/api/jugadores?page=0&size=1
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "1"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNZWxvZHkxOUBnbWFpbC5jb20iLCJpYXQiOjE3ODQ2MTAxNTgsImV4cCI6MTc4NDY5NjU1OH0.vV8W7wHTknST-guazCdkyQyKwVQHGrp5SzoNw0PPdMo
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

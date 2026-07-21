@@ -1,0 +1,24 @@
+info:
+  name: Agregar Equipo VPS
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://68.183.115.226:2925/MGAJact4-t4/api/equipos
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Tigres",
+        "ciudad": "Monterrey"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNZWxvZHkxOUBnbWFpbC5jb20iLCJpYXQiOjE3ODQ2MTAxNTgsImV4cCI6MTc4NDY5NjU1OH0.vV8W7wHTknST-guazCdkyQyKwVQHGrp5SzoNw0PPdMo
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

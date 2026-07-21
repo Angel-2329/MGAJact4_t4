@@ -1,0 +1,17 @@
+info:
+  name: Eliminar Equipo VPS
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: http://68.183.115.226:2925/MGAJact4-t4/api/equipos/11
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNZWxvZHkxOUBnbWFpbC5jb20iLCJpYXQiOjE3ODQ2MTA2OTUsImV4cCI6MTc4NDY5NzA5NX0.H1UwFxnZpoUY7SI4b7Qs9KdXXi6K3F2UvCMdXrLQVfI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

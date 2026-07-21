@@ -1,0 +1,22 @@
+info:
+  name: Login VPS
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://68.183.115.226:2925/MGAJact4-t4/api/auth/login
+  body:
+    type: json
+    data: |-
+      {
+        "email": "Melody19@gmail.com",
+        "password": "Melody19Mendoza"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

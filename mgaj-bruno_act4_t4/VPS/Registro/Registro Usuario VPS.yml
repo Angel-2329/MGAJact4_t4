@@ -1,0 +1,23 @@
+info:
+  name: Registro Usuario VPS
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://68.183.115.226:2925/MGAJact4-t4/api/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Melody Mendoza",
+        "correo": "Melody19@gmail.com",
+        "contraseña": "Melody19Mendoza"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
