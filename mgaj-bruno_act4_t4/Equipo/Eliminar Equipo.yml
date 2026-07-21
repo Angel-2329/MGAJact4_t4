@@ -1,0 +1,17 @@
+info:
+  name: Eliminar Equipo
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: http://localhost:2925/api/equipos/10
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmdlbDI5QGdtYWlsLmNvbSIsImlhdCI6MTc4NDYwMDQ2MSwiZXhwIjoxNzg0Njg2ODYxfQ.aA3LHxwkZ0oGtyU7zvzWmyjawOCE0jG1qca0suCOS-M
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

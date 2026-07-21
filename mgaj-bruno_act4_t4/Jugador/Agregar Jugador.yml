@@ -1,0 +1,26 @@
+info:
+  name: Agregar Jugador
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:2925/api/jugadores
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "André-Pierre Gignac",
+        "posicion": "Delantero",
+        "numeroCamiseta": 10,
+        "equipoId": 1
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmdlbDI5QGdtYWlsLmNvbSIsImlhdCI6MTc4NDYwMzE0NiwiZXhwIjoxNzg0Njg5NTQ2fQ.2UN0EHtcxLALm5PGRU1onmbV4XF0apHuKGoIjMZFU4Y
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

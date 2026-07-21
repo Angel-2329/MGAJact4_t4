@@ -1,11 +1,11 @@
 info:
-  name: Login
+  name: Probar seguridad
   type: http
-  seq: 2
+  seq: 1
 
 http:
-  method: POST
-  url: http://localhost:2925/api/auth/login
+  method: GET
+  url: http://localhost:2925/api/equipos
   auth: inherit
 
 settings:
